@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+:root {
+    font-size: 62.5%;
+}
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+
+    background: linear-gradient(to bottom, #8257E5 0%, #271A45 100%);
+}
+body * {
+    font-family: 'Rubik', sans-serif;
+    color: #000000;
+    letter-spacing: -0.02em;
+}
+
+section {
+    padding: 2.4rem 3.2rem;
+    background-color: white;
+
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.grid {
+    display: grid;
+    row-gap: 2.4rem;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+.title-1 {
+    font-size: 4rem;
+    font-weight: 500;
+    opacity: .88;
+}
+.title-2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: .64;
+}
+.text-1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    opacity: .88;
+}
+.text-2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    opacity: .80;
+}
+
+main{
+    gap: 2rem;
+    max-width: 32.7rem;
+}
+#main-title, #main-subinfo {
+    color: #ffffff;
+}
+#main-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+#main-subinfo {
+    font-size: 1.4rem;
+    font-weight: 300;
+    opacity: .64;
+    margin-inline: 3rem;
+}
+
+#app {
+    border-radius: 2.4rem;
+}
+
+.top {
+    border-radius: 2.4rem 2.4rem 0 0;
+
+    --mask: radial-gradient(
+        1.2rem at 1.2rem bottom, transparent 95%, black
+    ) -1.2rem;
+}
+.top .flex:last-child {
+    justify-content: start;
+}
+.top .flex:last-child img {
+    margin-left: 1.5rem;
+}
+#SFO-hour {
+    display: flex;
+    justify-content: end;
+    align-items: top;
+}
+#SFO-hour p:not(.text-2) {
+    font-size: 1rem;
+    font-weight: 500;
+    color: .80;
+}
+
+.middle {
+    border-block: 1px dashed rgba(0, 0, 0, 0.32);
+
+    --mask: radial-gradient(
+        1.2rem at 1.2rem 1.2rem, transparent 95%, black
+    ) -1.2rem -1.2rem;
+}
+
+.bottom {
+    border-radius: 0 0 2.4rem 2.4rem;
+
+    --mask: radial-gradient(
+        1.2rem at 1.2rem top, transparent 95%, black
+    ) -1.2rem;
+}
+#hour {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #ffffff;
+
+    display: inline-block;
+    padding: .4rem .8rem;
+    background-color: #633BBC;
+    border-radius: .8rem;
+
+    margin-top: .2rem;
+}
+#bottom-left {
+    row-gap: 1.6rem;
+}
+#bottom-right {
+    row-gap: 1rem;
+}
+#bottom-right img {
+    width: 14rem;
+    height: 14rem;
+}
+#bottom-attention strong{
+    font-weight: 500;
+}

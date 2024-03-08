@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Embarque</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <main class="grid center">
+        <h1 id="main-title">Cartão de embarque</h1>
+
+        <div id="app">
+            <section class="top grid">
+                <div class="flex">
+                    <div>
+                        <h2 class="title-2 left">Voo</h2>
+                        <p class="text-1">RS995</p>
+                    </div>
+                    <div>
+                        <h2 class="title-2 right">Data</h2>
+                        <p class="text-1 right">23/05/2023</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="left">
+                        <h2 class="title-2">São Paulo, Brasil</h2>
+                        <h1 class="title-1">GRU</h1>
+                        <p class="text-2">17:00</p>
+                    </div>
+
+                    <img src="assets/airplane.svg" alt="Ícone de avião">
+
+                    <div class="right">
+                        <h2 class="title-2">São Francisco, EUA</h2>
+                        <h1 class="title-1">SFO</h1>
+                        <div id="SFO-hour">
+                            <p class="text-2">04:48</p>
+                            <p">+1</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="middle flex">
+                <div class="left">
+                    <h2 class="title-2">Passageiro</h2>
+                    <p class="text-1">Rodrigo Terron</p>
+                </div>
+                <div class="right">
+                    <h2 class="title-2">Assento</h2>
+                    <p class="text-1">28A</p>
+                </div>
+            </section>
+            <section class="bottom grid">
+                <div class="flex" id="bottom-main">
+                    <div class="left grid" id="bottom-left">
+                        <div>
+                            <h2 class="title-2">Embarque</h2>
+                            <p id="hour">16:15</p>
+                        </div>
+                        <div>        
+                            <h2 class="title-2">Terminal</h2>
+                            <p class="text-1">2</p>
+                        </div>
+                        <div>        
+                            <h2 class="title-2">Portão</h2>
+                            <p class="text-1">15</p>
+                        </div>       
+                    </div>
+                    <div class="grid" id="bottom-right">
+                        <img src="assets/qr-code.png" alt="QR-CODE">
+                        <h2 class="title-2">Grupo de embarque: 3</h2>
+                    </div>
+                </div>
+                <div class="text-2" id="bottom-attention">
+                    <strong>Atenção:</strong> o portão fecha 16:45
+                </div>
+            </section>
+        </div>
+
+        <p id="main-subinfo">Qualquer problema procure o balcão de atendimento da sua companhia aérea</p>
+    </main>
+</body>
+</html>
